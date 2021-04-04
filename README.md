@@ -1,7 +1,15 @@
-# Vue 3 + Typescript + Vite
+# QRリーダーアプリ
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+## 環境
++ Node: 12.16.x
++ yarn: 1.22.x
 
+## 使用技術
++ Vue 3
++ TypeScript
++ Vite
+
+---
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
