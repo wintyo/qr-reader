@@ -1,23 +1,55 @@
 <template lang="pug">
 div
-  p.test__hoge test
+  .box
+    QRReader(
+      @scan="onScan"
+    )
+    .info
+      div QRデータ:
+      template(v-if="isUrl")
+        a(:href="state.qrCode", target="_blank") {{ state.qrCode }}
+      template(v-else)
+        p {{ state.qrCode }}
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, reactive, computed } from 'vue';
+import QRReader from './components/QRReader.vue';
+
+interface IState {
+  /** QRコードデータ */
+  qrCode: string;
+}
 
 export default defineComponent({
   name: 'App',
-})
+  components: {
+    QRReader,
+  },
+  setup() {
+    const state = reactive<IState>({
+      qrCode: '',
+    });
+
+    const isUrl = computed(() => {
+      return /^https?:\/\//.test(state.qrCode);
+    });
+
+    return {
+      state,
+      isUrl,
+      onScan: (code: string) => {
+        console.log(code);
+        state.qrCode = code;
+      },
+    };
+  },
+});
 </script>
 
 <style lang="scss" scoped>
-.test {
-  color: red;
-
-  &__hoge {
-    font-size: 18px;
-    font-weight: bold;
-  }
+.box {
+  max-width: 600px;
+  margin: 0 auto;
 }
 </style>
