@@ -15,7 +15,7 @@ export default defineConfig({
         background_color: '#fff',
         theme_color: '#3cb371',
         display: 'standalone',
-        scope: 'https://wintyo.github.io/qr-reader/',
+        scope: '/qr-reader/',
         start_url: '/qr-reader/',
         icons: [
           {
