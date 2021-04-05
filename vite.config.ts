@@ -9,12 +9,13 @@ export default defineConfig({
     vue(),
     VitePWA({
       manifest: {
+        lang: 'ja',
         name: 'QR Reader',
         short_name: 'QR',
         background_color: '#fff',
         theme_color: '#3cb371',
         display: 'standalone',
-        scope: '/',
+        scope: '/qr-reader/',
         start_url: '/',
         icons: [
           {
