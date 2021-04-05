@@ -52,4 +52,8 @@ export default defineComponent({
   max-width: 600px;
   margin: 0 auto;
 }
+
+.info {
+  word-break: break-all;
+}
 </style>
