@@ -15,8 +15,8 @@ export default defineConfig({
         background_color: '#fff',
         theme_color: '#3cb371',
         display: 'standalone',
-        scope: '/qr-reader/',
-        start_url: '/',
+        scope: '/',
+        start_url: '/qr-reader/',
         icons: [
           {
             src: 'app-icons/512x512.png',
