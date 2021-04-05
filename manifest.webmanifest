@@ -1,1 +1,1 @@
-{"name":"QR Reader","short_name":"QR","start_url":"/qr-reader/","display":"standalone","background_color":"#fff","lang":"ja","scope":"/","theme_color":"#3cb371","icons":[{"src":"app-icons/512x512.png","sizes":"512x512","type":"image/png"}]}
+{"name":"QR Reader","short_name":"QR","start_url":"/qr-reader/","display":"standalone","background_color":"#fff","lang":"ja","scope":"/qr-reader/","theme_color":"#3cb371","icons":[{"src":"app-icons/512x512.png","sizes":"512x512","type":"image/png"}]}
